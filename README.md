@@ -2,7 +2,7 @@
 This is an example implementation of a dynamic Chart of Accounts measure generator for Qlik Sense. You can modify the COA and the Data portions to connect to your data sources.
 
 # Results
-Leveraging your Chart of Accounts (or other Hierachy), you end up with a series of variables that can be leveraged in Master Items or directly in your visualzations. Using the example, you will can get the following output with a simple chart of accounts.
+Leveraging your Chart of Accounts (or other Hierachy), you end up with a series of variables that can be leveraged in Master Items or directly in your visualzations. Using the example, you will can get the following output (legend: blue = add, red = minus, lightblue = skip, yellow = multiply, and green = divide) with a simplified chart of accounts (below).
 
 ![Financial Example](https://github.com/newmans99/Qlik-Financial-Rollup-Example/raw/master/FinancialExample.png)
 
@@ -25,9 +25,9 @@ from the following Chart of Accounts:
 |0||Gross Margin|
 
 
-With variables getting created like:
+With variables automatically being generated that look like this:
 
-```vExt_Gross_Margin = (+(+(((+SUM({$<Node={"4010"}>}Values)-1*SUM({$<Node={"4020"}>}Values))*(SUM({$<Node={"4030"}>}Values)))/(SUM({$<Node={"4115"}>}Values)))-1*(+SUM({$<Node={"4202"}>}Values)+SUM({$<Node={"4204"}>}Values)))-1*(+SUM({$<Node={"5001"}>}Values)))```
+>```vExt_Gross_Margin = (+(+(((+SUM({$<Node={"4010"}>}Values)-1*SUM({$<Node={"4020"}>}Values))*(SUM({$<Node={"4030"}>}Values)))/(SUM({$<Node={"4115"}>}Values)))-1*(+SUM({$<Node={"4202"}>}Values)+SUM({$<Node={"4204"}>}Values)))-1*(+SUM({$<Node={"5001"}>}Values)))```
 
 
 
