@@ -1,4 +1,4 @@
-# Qlik-Financial-Rollup-Example
+# Qlik Financial Rollup Example
 This is an example implementation of a dynamic Chart of Accounts measure generator for Qlik Sense. You can modify the COA and the Data portions to connect to your data sources.
 
 # Results
