@@ -1,5 +1,5 @@
 # Qlik Financial Rollup Example
-This is an example implementation of a dynamic Chart of Accounts measure generator for Qlik Sense. You can modify the COA and the Data portions to connect to your data sources.
+This is an example implementation of a dynamic Chart of Accounts measure generator for Qlik Sense. You can modify the COA and the Data portions to connect to your data sources. This is particularily helpful when building a "consolidation" type chart of accounts or replacing "Unary Operators in Parent-Child Dimensions" in MSAS as defined [here](https://msdn.microsoft.com/en-us/library/ms175417.aspx).
 
 # Results
 Leveraging your Chart of Accounts (or other Hierachy), you end up with a series of variables that can be leveraged in Master Items or directly in your visualzations. Using the example, you will can get the following output (legend: blue = add, red = minus, lightblue = skip, yellow = multiply, and green = divide) with a simplified chart of accounts (below).
