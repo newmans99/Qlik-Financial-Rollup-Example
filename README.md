@@ -40,16 +40,20 @@ With variables getting created like:
 </ol>
 
 **For Qlik Sense Server:**
-1. Download the [Financial Rollup Example.qvf](https://github.com/newmans99/Qlik-Financial-Rollup-Example/raw/master/Financial Rollup Example.qvf) file.
-2. From QMC, upload the downlaoded app.
-3. From Qlik Sense Hub, open the "Financial Rollup Example" app and interact/review the Financial Rollup Example Sheet.
+<ol>
+<li>Download the [Financial Rollup Example.qvf](https://github.com/newmans99/Qlik-Financial-Rollup-Example/raw/master/Financial Rollup Example.qvf) file.
+<li>From QMC, upload the downlaoded app.
+<li>From Qlik Sense Hub, open the "Financial Rollup Example" app and interact/review the Financial Rollup Example Sheet.
+</ol>
 
 # Application Load Script Logic Overview:
 The load script has this basic flow...
-1. Data Load - Bring in your data, key is that your data has a hiearchy of a Node, ParentNode, NodeName, and a Rollup Operator. The Data needs to have a Node and some type of Value or Amount column. Currently, the example app has an inline load, allowing for a transportable example.
-2. Transform - The logic here is to transform your hiearchy to understand the relationship between parent and children nodes.
-3. Create Variables - This section loops through all of the nodes, starting at the lowest (leaf) level, and working up the hiearchy. As it loops, it generates variables which can be used in your visualizations or in Master Items.
-4. Clean Up - Like all good Qlik Applications, you need to do a little clean up. Such as removing un-needed variables, dropping tables, and instructing the app to only allow certain columns for the application search capabilities.
+<ol>
+<li> Data Load - Bring in your data, key is that your data has a hiearchy of a Node, ParentNode, NodeName, and a Rollup Operator. The Data needs to have a Node and some type of Value or Amount column. Currently, the example app has an inline load, allowing for a transportable example.
+<li>Transform - The logic here is to transform your hiearchy to understand the relationship between parent and children nodes.
+<li>Create Variables - This section loops through all of the nodes, starting at the lowest (leaf) level, and working up the hiearchy. As it loops, it generates variables which can be used in your visualizations or in Master Items.
+<li>Clean Up - Like all good Qlik Applications, you need to do a little clean up. Such as removing un-needed variables, dropping tables, and instructing the app to only allow certain columns for the application search capabilities.
+</ol>
 
 # Please help...
 Please provide any comments or suggestions, specifically, I am looking for errors or problems in the load scriipt.
