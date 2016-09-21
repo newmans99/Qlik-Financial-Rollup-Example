@@ -44,14 +44,14 @@ Which roughly translate to:
 # Implementation
 **For Qlik Sense Desktop:**
 <ol>
-<li>Download the [Financial Rollup Example.qvf](https://github.com/newmans99/Qlik-Financial-Rollup-Example/raw/master/Financial Rollup Example.qvf) file.
+<li>Download the [Financial Rollup Example.qvf](https://github.com/newmans99/Qlik-Financial-Rollup-Example/raw/master/Financial%20Rollup%20Example.qvf) file.
 <li>Save the downloaded file to your "...\My Documents\Qlik\Apps" folder.
 <li>From Qlik Sense Desktop Hub, open the "Financial Rollup Example" app and interact/review the Financial Rollup Example Sheet.
 </ol>
 
 **For Qlik Sense Server:**
 <ol>
-<li>Download the [Financial Rollup Example.qvf](https://github.com/newmans99/Qlik-Financial-Rollup-Example/raw/master/Financial Rollup Example.qvf) file.
+<li>Download the [Financial Rollup Example.qvf](https://github.com/newmans99/Qlik-Financial-Rollup-Example/raw/master/Financial%20Rollup%20Example.qvf) file.
 <li>From QMC, upload the downlaoded app.
 <li>From Qlik Sense Hub, open the "Financial Rollup Example" app and interact/review the Financial Rollup Example Sheet.
 </ol>
