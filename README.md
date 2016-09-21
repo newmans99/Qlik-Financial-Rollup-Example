@@ -29,6 +29,16 @@ With variables automatically being generated that look like this:
 
 >```vExt_Gross_Margin = (+(+(((+SUM({$<Node={"4010"}>}Values)-1*SUM({$<Node={"4020"}>}Values))*(SUM({$<Node={"4030"}>}Values)))/(SUM({$<Node={"4115"}>}Values)))-1*(+SUM({$<Node={"4202"}>}Values)+SUM({$<Node={"4204"}>}Values)))-1*(+SUM({$<Node={"5001"}>}Values)))```
 
+Which roughly translate to:
+>```Gross Margin = Revenue - COGS```
+
+>```Revenue = Gross Revenue - Sales Deductions```
+
+>```Gross Revenue = ((Product Sales - Services Sales) * Training Sales) / Web Sales ```
+
+>```Sales Deductions = Sales Deductions Discounts + Sales Deductions Returns EXCLUDING Sales Deductions Promotions```
+
+>```COGS = Account Code = 5001```
 
 
 # Implementation
